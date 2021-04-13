@@ -3,7 +3,14 @@ import { useFetch } from './useFetch';
 import Follower from './Follower';
 function App() {
   const { loading, data } = useFetch();
-  return <h2>pagination starter</h2>;
+  return (
+    <main>
+      <div className="section-title">
+        <h1>{loading ? 'loading...' : 'pagination'}</h1>
+        <div className="underline"></div>
+      </div>
+    </main>
+  );
 }
 
 export default App;
