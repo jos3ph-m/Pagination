@@ -1,5 +1,5 @@
 const paginate = (followers) => {
-  console.log(followers);
+  const itemsPerPage = 9;
 };
 
 export default paginate;
