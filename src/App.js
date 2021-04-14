@@ -24,7 +24,7 @@ function App() {
             return <Follower key={follower.id} {...follower} />;
           })}
         </div>
-        {!loading && <div className="btn-container">Hello world</div>}
+        {!loading && <div className="btn-container">{data.map(() => {})}</div>}
       </section>
     </main>
   );
