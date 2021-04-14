@@ -24,6 +24,7 @@ function App() {
             return <Follower key={follower.id} {...follower} />;
           })}
         </div>
+        <div className="btn-container">Hello world</div>
       </section>
     </main>
   );
