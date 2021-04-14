@@ -8,6 +8,7 @@ function App() {
 
   useEffect(() => {
     if (loading) return;
+    // now once I'm done loading:
     setFollowers(data[page]);
   }, [loading]);
 
