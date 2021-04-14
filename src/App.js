@@ -6,6 +6,10 @@ function App() {
   const [page, setPage] = useState(0);
   const [followers, setFollowers] = useState([]);
 
+  useEffect(() => {
+    setFollowers(data[page]);
+  }, []);
+
   return (
     <main>
       <div className="section-title">
