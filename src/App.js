@@ -10,7 +10,7 @@ function App() {
     if (loading) return;
     // now once I'm done loading:
     setFollowers(data[page]);
-  }, [loading]);
+  }, [loading, page]);
 
   const handlePage = (index) => {
     setPage(index);
