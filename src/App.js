@@ -30,7 +30,9 @@ function App() {
         </div>
         {!loading && (
           <div className="btn-container">
-            <button className="prev-btn">prev</button>
+            <button className="prev-btn" onClick={prevPage}>
+              prev
+            </button>
             {data.map((item, index) => {
               return (
                 <button
@@ -42,6 +44,9 @@ function App() {
                 </button>
               );
             })}
+            <button className="prev-btn" onClick={nextPage}>
+              next
+            </button>
           </div>
         )}
       </section>
