@@ -29,7 +29,7 @@ function App() {
             {data.map((item, index) => {
               return (
                 <button key={index} className="page-btn">
-                  button
+                  {index + 1}
                 </button>
               );
             })}
