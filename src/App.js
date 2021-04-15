@@ -30,6 +30,7 @@ function App() {
         </div>
         {!loading && (
           <div className="btn-container">
+            <button className="prev-btn">prev</button>
             {data.map((item, index) => {
               return (
                 <button
