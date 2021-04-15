@@ -12,6 +12,10 @@ function App() {
     setFollowers(data[page]);
   }, [loading]);
 
+  const handlePage = (index) => {
+    setPage(index);
+  };
+
   return (
     <main>
       <div className="section-title">
