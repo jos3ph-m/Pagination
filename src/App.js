@@ -34,7 +34,7 @@ function App() {
               return (
                 <button
                   key={index}
-                  className="page-btn"
+                  className={`page-btn ${index === page ? 'active-btn' : null}`}
                   onClick={() => handlePage(index)}
                 >
                   {index + 1}
