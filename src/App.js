@@ -16,6 +16,14 @@ function App() {
     setPage(index);
   };
 
+  const nextPage = () => {
+    setPage(() => {});
+  };
+
+  const prevPage = () => {
+    setPage(() => {});
+  };
+
   return (
     <main>
       <div className="section-title">
